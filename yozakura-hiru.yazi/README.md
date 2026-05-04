@@ -20,7 +20,7 @@ A warm ivory canvas bathed in soft daylight, with gentle pastel tones throughout
 ## ✦ Preview
 
 <div align="center">
-<img src="../assets/yazi-hiru-preview.png" alt="Yozakura Hiru — day flavor preview" width="800"/>
+<img src="preview.png" alt="Yozakura Hiru — day flavor preview" width="800"/>
 </div>
 
 ---
@@ -32,6 +32,9 @@ A warm ivory canvas bathed in soft daylight, with gentle pastel tones throughout
 | `flavor.toml` | Flavor metadata and color definitions |
 | `theme.toml` | Full color theme (status bar, borders, selection, etc.) |
 | `tmtheme.xml` | Syntax highlighting colors for file previews |
+| `preview.png` | Preview screenshot |
+| `LICENSE` | License for the theme |
+| `LICENSE-tmtheme` | License for the tmtheme syntax file |
 
 ---
 

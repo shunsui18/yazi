@@ -32,8 +32,8 @@ A handcrafted pastel color palette for [yazi](https://github.com/sxyazi/yazi), b
 <td align="center"><b>☀️ Hiru</b></td>
 </tr>
 <tr>
-<td><img src="assets/yazi-yoru-preview.png" alt="Yoru — night flavor"/></td>
-<td><img src="assets/yazi-hiru-preview.png" alt="Hiru — day flavor"/></td>
+<td><img src="yozakura-yoru.yazi/preview.png" alt="Yoru — night flavor"/></td>
+<td><img src="yozakura-hiru.yazi/preview.png" alt="Hiru — day flavor"/></td>
 </tr>
 </table>
 
@@ -142,17 +142,22 @@ bash install.sh --theme yoru
 
 ```
 yazi/
-├── assets/
-│   ├── yazi-yoru-preview.png
-│   └── yazi-hiru-preview.png
 ├── yozakura-yoru.yazi/
 │   ├── flavor.toml
 │   ├── theme.toml
-│   └── tmtheme.xml
+│   ├── tmtheme.xml
+│   ├── preview.png
+│   ├── LICENSE
+│   ├── LICENSE-tmtheme
+│   └── README.md
 ├── yozakura-hiru.yazi/
 │   ├── flavor.toml
 │   ├── theme.toml
-│   └── tmtheme.xml
+│   ├── tmtheme.xml
+│   ├── preview.png
+│   ├── LICENSE
+│   ├── LICENSE-tmtheme
+│   └── README.md
 ├── theme.toml  →  yozakura-yoru.yazi/theme.toml  (symlink, active flavor)
 ├── install.sh
 ├── LICENSE

@@ -20,7 +20,7 @@ Deep navy blues and moonlit backgrounds, softened with sakura petal accents.
 ## ✦ Preview
 
 <div align="center">
-<img src="../assets/yazi-yoru-preview.png" alt="Yozakura Yoru — night flavor preview" width="800"/>
+<img src="preview.png" alt="Yozakura Yoru — night flavor preview" width="800"/>
 </div>
 
 ---
@@ -32,6 +32,9 @@ Deep navy blues and moonlit backgrounds, softened with sakura petal accents.
 | `flavor.toml` | Flavor metadata and color definitions |
 | `theme.toml` | Full color theme (status bar, borders, selection, etc.) |
 | `tmtheme.xml` | Syntax highlighting colors for file previews |
+| `preview.png` | Preview screenshot |
+| `LICENSE` | License for the theme |
+| `LICENSE-tmtheme` | License for the tmtheme syntax file |
 
 ---
 
