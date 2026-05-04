@@ -29,12 +29,12 @@ GITHUB_RAW="https://raw.githubusercontent.com/shunsui18/yazi/main"
 
 # ── All files that must be fetched in remote mode ────────────────────────────
 REMOTE_FILES=(
-  flavors/yozakura-yoru.yazi/flavor.toml
-  flavors/yozakura-yoru.yazi/theme.toml
-  flavors/yozakura-yoru.yazi/tmtheme.xml
-  flavors/yozakura-hiru.yazi/flavor.toml
-  flavors/yozakura-hiru.yazi/theme.toml
-  flavors/yozakura-hiru.yazi/tmtheme.xml
+  yozakura-yoru.yazi/flavor.toml
+  yozakura-yoru.yazi/theme.toml
+  yozakura-yoru.yazi/tmtheme.xml
+  yozakura-hiru.yazi/flavor.toml
+  yozakura-hiru.yazi/theme.toml
+  yozakura-hiru.yazi/tmtheme.xml
 )
 
 # ── Detect remote vs local execution ─────────────────────────────────────────
@@ -61,12 +61,12 @@ fi
 
 # ── Build flavor list from available flavor directories ───────────────────────
 mapfile -t FLAVORS < <(
-  ls -d "${SCRIPT_DIR}"/flavors/yozakura-*.yazi 2>/dev/null \
+  ls -d "${SCRIPT_DIR}"/yozakura-*.yazi 2>/dev/null \
     | sed 's/.*yozakura-//;s/\.yazi//' \
     | sort
 )
 [[ ${#FLAVORS[@]} -gt 0 ]] \
-  || die "No flavors/yozakura-*.yazi directories found in ${SCRIPT_DIR}"
+  || die "No yozakura-*.yazi directories found in ${SCRIPT_DIR}"
 
 # ── Parse CLI flags ───────────────────────────────────────────────────────────
 FLAVOR=""
@@ -135,10 +135,10 @@ if [[ -z "$FLAVOR" ]]; then
 fi
 
 # ── Validate flavor ───────────────────────────────────────────────────────────
-[[ -d "${SCRIPT_DIR}/flavors/yozakura-${FLAVOR}.yazi" ]] \
+[[ -d "${SCRIPT_DIR}/yozakura-${FLAVOR}.yazi" ]] \
   || die "Flavor '${FLAVOR}' not found.\n       Available flavors: ${FLAVORS[*]}"
-[[ -f "${SCRIPT_DIR}/flavors/yozakura-${FLAVOR}.yazi/theme.toml" ]] \
-  || die "flavors/yozakura-${FLAVOR}.yazi/theme.toml missing — repo may be incomplete"
+[[ -f "${SCRIPT_DIR}/yozakura-${FLAVOR}.yazi/theme.toml" ]] \
+  || die "yozakura-${FLAVOR}.yazi/theme.toml missing — repo may be incomplete"
 
 # ── Destination paths ─────────────────────────────────────────────────────────
 YAZI_CFG_DIR="${HOME}/.config/yazi"
@@ -177,7 +177,7 @@ fi
 
 # ── Step 3 — Install all flavor directories ───────────────────────────────────
 section "[ 3/4 ]  Installing flavor directories"
-for flavor_dir in "${SCRIPT_DIR}"/flavors/yozakura-*.yazi; do
+for flavor_dir in "${SCRIPT_DIR}"/yozakura-*.yazi; do
   [[ -d "$flavor_dir" ]] || continue
   flavor_name="$(basename "$flavor_dir")"
   dest_dir="${YAZI_FLAVORS_DIR}/${flavor_name}"

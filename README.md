@@ -119,7 +119,7 @@ cp theme.toml ~/.config/yazi/theme.toml
 ln -sf "$(pwd)/theme.toml" ~/.config/yazi/theme.toml
 ```
 
-> The repo's `theme.toml` is itself a symlink to `flavors/yozakura-yoru.yazi/theme.toml` (night flavor). To use the day flavor instead, point your symlink to `flavors/yozakura-hiru.yazi/theme.toml`.
+> The repo's `theme.toml` is itself a symlink to `yozakura-yoru.yazi/theme.toml` (night flavor). To use the day flavor instead, point your symlink to `yozakura-hiru.yazi/theme.toml`.
 
 ---
 
@@ -147,7 +147,7 @@ bash install.sh --theme yoru
 3. **Validates** — confirms the requested flavor's files exist before touching anything
 4. **Backs up** your existing `~/.config/yazi/theme.toml` (timestamped) before making any changes — pass `--no-backup` to skip
 5. **Creates** the full directory tree under `$HOME/.config/yazi/` if not already present
-6. **Copies** all flavor files into `~/.config/yazi/flavors/`:
+6. **Copies** all flavor files into `~/.config/yazi/flavors/` (yazi expects them there regardless of where they live in the repo):
    - `flavor.toml` — flavor metadata
    - `theme.toml` — full color theme
    - `tmtheme.xml` — syntax highlighting colors
@@ -163,16 +163,15 @@ yazi/
 ├── assets/
 │   ├── yazi-yoru-preview.png
 │   └── yazi-hiru-preview.png
-├── flavors/
-│   ├── yozakura-yoru.yazi/
-│   │   ├── flavor.toml
-│   │   ├── theme.toml
-│   │   └── tmtheme.xml
-│   └── yozakura-hiru.yazi/
-│       ├── flavor.toml
-│       ├── theme.toml
-│       └── tmtheme.xml
-├── theme.toml  →  flavors/yozakura-yoru.yazi/theme.toml  (symlink, active flavor)
+├── yozakura-yoru.yazi/
+│   ├── flavor.toml
+│   ├── theme.toml
+│   └── tmtheme.xml
+├── yozakura-hiru.yazi/
+│   ├── flavor.toml
+│   ├── theme.toml
+│   └── tmtheme.xml
+├── theme.toml  →  yozakura-yoru.yazi/theme.toml  (symlink, active flavor)
 ├── install.sh
 ├── LICENSE
 └── README.md
