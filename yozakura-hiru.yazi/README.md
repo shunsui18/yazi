@@ -43,7 +43,7 @@ A warm ivory canvas bathed in soft daylight, with gentle pastel tones throughout
 Install this flavor directly through yazi's built-in package manager:
 
 ```bash
-ya pkg add shunsui18/yazi:yozakura-hiru
+ya pkg add shunsui18/yozakura-yazi:yozakura-hiru
 ```
 
 Then **manually activate** it by adding or updating the `[flavor]` block in your `~/.config/yazi/theme.toml`:
