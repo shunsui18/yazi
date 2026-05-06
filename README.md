@@ -46,7 +46,7 @@ A handcrafted pastel color palette for [yazi](https://github.com/sxyazi/yazi), b
 Install directly from this repository with a single command:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/shunsui18/yazi/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/shunsui18/yozakura-yazi/main/install.sh)
 ```
 
 > Running without flags launches an **interactive menu** to pick your flavor.
@@ -67,13 +67,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/shunsui18/yazi/main/install.
 
 ```bash
 # interactive menu
-bash <(curl -fsSL https://raw.githubusercontent.com/shunsui18/yazi/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/shunsui18/yozakura-yazi/main/install.sh)
 
 # skip menu — yoru (night)
-bash <(curl -fsSL https://raw.githubusercontent.com/shunsui18/yazi/main/install.sh) --theme yoru
+bash <(curl -fsSL https://raw.githubusercontent.com/shunsui18/yozakura-yazi/main/install.sh) --theme yoru
 
 # skip menu — hiru (day)
-bash <(curl -fsSL https://raw.githubusercontent.com/shunsui18/yazi/main/install.sh) --theme hiru
+bash <(curl -fsSL https://raw.githubusercontent.com/shunsui18/yozakura-yazi/main/install.sh) --theme hiru
 ```
 
 ---
@@ -111,7 +111,7 @@ If you prefer to install by hand:
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/shunsui18/yazi.git && cd yazi
+git clone https://github.com/shunsui18/yozakura-yazi.git && cd yozakura-yazi
 
 # 2a. Interactive menu
 bash install.sh
@@ -141,7 +141,7 @@ bash install.sh --theme yoru
 ## ✦ File Structure
 
 ```
-yazi/
+yozakura-yazi/
 ├── yozakura-yoru.yazi/
 │   ├── flavor.toml
 │   ├── theme.toml
